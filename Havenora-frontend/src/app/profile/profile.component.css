@@ -1,0 +1,9 @@
+.profile {
+  width: 120px; /* Define fixed width */
+  height: 120px; /* Define fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem; /* Font size to fit inside the circle */
+  line-height: 1; /* Ensures the letter is vertically centered */
+}

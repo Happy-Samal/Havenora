@@ -1,0 +1,21 @@
+         <!-- Profile Page Content -->
+         <div class="col-9 d-flex flex-column justify-content-center align-items-center py-5">
+          <!-- Profile Circle -->
+          <div class="text-center">
+              <span class="profile rounded-circle border border-2 border-white bg-primary text-white p-4" style="font-size: 3rem;">
+                  {{employee.name.charAt(0).toUpperCase()}}
+              </span>
+          </div>
+
+          <!-- Username and Email -->
+          <div class="mt-4 text-center text-white">
+              <h4 >{{employee.name}}</h4>
+              <p>{{employee.email}}</p>
+          </div>
+
+          <!-- Logout Button -->
+          <div class="mt-3">
+              <button class="btn btn-danger" (click)="logout()">Logout</button>
+          </div>
+      </div>
+

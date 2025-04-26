@@ -1,0 +1,23 @@
+
+.navbar-brand{
+  color: #a47d32;
+  font-size: 32px;
+  font-family:sans-serif;
+}
+
+/* CSS */
+.logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none; /* remove underline from link */
+  display: inline-block;
+}
+
+.logo:hover {
+
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+/* Approval/Rejection Table */
+.approval-table {
+  position: relative;
+  background: white;
+  width: 102%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.approval-table table {
+  width: 98%;
+  border-collapse: collapse;
+}
+button:disabled{
+  background-color: black;
+}
+
+.approval-table th, .approval-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.approval-table th {
+  background: #f4f4f4;
+}
+
+.approval-table button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.approval-table button.approve {
+  background: #28a745;
+  color: white;
+}
+
+.approval-table button.reject {
+  background: #dc3545;
+  color: white;
+}
+
+

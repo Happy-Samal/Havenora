@@ -1,0 +1,38 @@
+
+      <!-- Approval/Rejection Section -->
+      <section id="approval" class="content-section hidden ">
+        <h3 class="text-white py-4">My Bookings</h3>
+        <div class="approval-table">
+            <table >
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Employee Name</th>
+                        <th>Location</th>
+                        <th>Tower</th>
+                        <th>Flat</th>
+                        <th>Room</th>
+                        <th>From Date</th>
+                        <th>To Date</th>
+                        <th>status</th>
+                    </tr>
+                </thead>
+                <tbody id="bookingRequests">
+                    <!-- Booking requests will be dynamically populated here -->
+                     <tr *ngFor="let b of approval">
+                        <td >{{b.bookingId}}</td>
+                        <td >{{b.employeeName}}</td>
+                        <td >{{b.location}}</td>
+                        <td >{{b.towerName}}</td>
+                        <td >{{b.flatNo}}</td>
+                        <td >{{b.roomNo}}</td>
+                        <td >{{b.fromDate}}</td>
+                        <td >{{b.toDate}}</td>
+                        <td >{{b.status}}</td>
+
+                     </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>

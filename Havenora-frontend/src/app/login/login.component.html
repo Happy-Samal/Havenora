@@ -1,0 +1,26 @@
+
+
+
+<!-- src/app/login/login.component.html -->
+<div class="login-container">
+  <h2 class="text-center text-white">Login</h2>
+
+  <form #login="ngForm"  (ngSubmit)="submit(login)">
+    <!-- Email Input -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" ngModel #email="ngModel" required>
+      <small *ngIf="email.invalid && email.touched">This field is required</small>
+    </div>
+
+    <!-- Password Input -->
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter your password" name="password" ngModel #password="ngModel" required>
+      <small *ngIf="password.invalid && password.touched">This field is required</small>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-submit w-100" [disabled]="login.invalid">Submit</button>
+  </form>
+</div>

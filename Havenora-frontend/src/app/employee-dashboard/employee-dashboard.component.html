@@ -1,0 +1,15 @@
+<div class="container">
+  <aside class="sidebar">
+    <ul>
+      <li (click)="dashboardClick('dashboard')" [ngClass]="{'active':activeBtn==='dashboard'}"><i class="fas fa-home"></i> Dashboard</li>
+      <li (click)="bookClick('book')" [ngClass]="{'active':activeBtn==='book'}"><i class="fas fa-calendar-alt"></i> Book Accommodation</li>
+      <li (click)="myBookingClick('MyBooking')" [ngClass]="{'active':activeBtn==='MyBooking'}"><i class="fas fa-check-circle"></i> My Bookings</li>
+      <li (click)="rulesClick('rules')" [ngClass]="{'active':activeBtn==='rules'}"><i class="fas fa-book"></i> Guest House Rules</li>
+      <li (click)="profileClick('profile')" [ngClass]="{'active':activeBtn==='profile'}"><i class="fas fa-cog"></i> profile</li>
+  </ul>
+  </aside>
+
+  <main class="dashboard position-relative w-75">
+    <router-outlet></router-outlet>
+</main>
+</div>

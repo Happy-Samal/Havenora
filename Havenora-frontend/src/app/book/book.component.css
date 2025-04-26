@@ -1,0 +1,44 @@
+/* Forms */
+
+.guesthouse-structure {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.guesthouse-structure label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.guesthouse-structure select, .guesthouse-structure input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.guesthouse-structure button:disabled{
+  background-color: red;
+}
+small{
+  color: red;
+}
+.guesthouse-structure button {
+  padding: 10px 20px;
+  background: #135c0d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.guesthouse-structure button:hover {
+  background: #0056b3;
+}

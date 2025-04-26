@@ -1,0 +1,47 @@
+  <!-- Book Accommodation Section -->
+  <section id="book" class="content-section hidden w-100 relative">
+    <h3 class="text-white">Book Your Stay</h3>
+    <form class="guesthouse-structure w-100 relative" #book="ngForm"  (ngSubmit)="bookSubmit(book)">
+        <label>Location</label>
+        <select id="location" #location="ngModel" ngModel name="location" required >
+
+            <option *ngFor="let l of locations" value="{{l}}">{{l}}</option>
+        </select>
+        <small *ngIf="location.invalid && location.touched">* This field is required</small>
+
+
+        <label>Tower No</label>
+        <select id="tower" #tower="ngModel" name="towerId" ngModel required (click)="fetchTowerByLocation(location.value)">
+            <option *ngFor="let t of towers" value="{{t.towerId}}">{{t.name}}</option>
+        </select>
+        <small *ngIf="tower.invalid && tower.touched">* This field is required</small>
+
+
+        <label>Flat No</label>
+        <select id="flat" #flat="ngModel" ngModel name="flatId" required (click)="fetchFlatByTower(tower.value)">
+
+            <option *ngFor="let f of flats" value="{{f.flatId}}">{{f.flatNo}}</option>
+        </select>
+        <small *ngIf="flat.invalid && flat.touched">* This field is required</small>
+
+
+        <label>Room No</label>
+        <select id="room" #room="ngModel" ngModel name="roomId" required (click)="fetchRoomByFlat(flat.value)">
+            <option *ngFor="let r of rooms" value="{{r.roomId}}">{{r.roomNo}}</option>
+        </select>
+        <small *ngIf="room.invalid && room.touched">* This field is required</small>
+
+
+        <label>From Date</label>
+        <input type="date" id="fromDate" #fromDate="ngModel" ngModel name="fromDate" required >
+        <small *ngIf="fromDate.invalid && fromDate.touched">* This field is required</small>
+
+
+        <label>To Date</label>
+        <input type="date" id="toDate" #toDate="ngModel" ngModel name="toDate" required >
+        <small *ngIf="toDate.invalid && toDate.touched">* This field is required</small>
+
+
+        <button type="submit" [disabled]="book.invalid" >Request Booking</button>
+    </form>
+</section>

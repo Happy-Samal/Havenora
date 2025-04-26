@@ -1,0 +1,40 @@
+/* src/app/login/login.component.css */
+
+/* src/app/login/login.component.css */
+:host {
+  display: block;
+  min-height: 85vh; /* Custom height, you can change this */
+  color: white;
+  position: relative; /* Make sure the host is positioned to contain the video */
+  padding-top: 10vh;
+}
+
+small{
+  color: red;
+}
+.login-container {
+  background-color: rgba(28, 8, 8, 0.903); /* Slight transparent background for form */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 80vh;
+  margin: auto;
+}
+
+.form-label {
+  color: white; /* White text for labels */
+}
+
+.btn-submit:disabled{
+  background-color: red;
+}
+.btn-submit {
+  background-color: #179146; /* Submit button color matching #0f4323 */
+  color: white;
+  border: none;
+}
+
+.btn-submit:hover {
+  background-color: #114b28; /* Darker shade of #0f4323 on hover */
+}

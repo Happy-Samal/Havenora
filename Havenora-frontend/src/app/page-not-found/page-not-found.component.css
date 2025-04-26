@@ -1,0 +1,13 @@
+.bg-url1 {
+  height: 400px;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../assets/notfound.gif);
+}
+
+.page-not-found {
+  min-height: 80vh;
+  background: white;
+}
+
