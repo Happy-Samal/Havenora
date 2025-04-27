@@ -8,13 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.havenora.backend.dto.FlatDto;
-import com.havenora.backend.dto.TowerDto;
 import com.havenora.backend.mapper.FlatMapper;
-import com.havenora.backend.mapper.RoomMapper;
-import com.havenora.backend.mapper.TowerMapper;
 import com.havenora.backend.model.Flat;
-import com.havenora.backend.model.Room;
-import com.havenora.backend.model.Tower;
 import com.havenora.backend.repository.FlatRepository;
 import com.havenora.backend.service.FlatServiceInterface;
 

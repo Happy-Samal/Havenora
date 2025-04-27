@@ -1,9 +1,6 @@
 package com.havenora.backend.dto;
 
-import com.havenora.backend.model.Tower;
 
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;
